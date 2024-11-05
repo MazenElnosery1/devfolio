@@ -1,0 +1,290 @@
+
+*{
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#0d6efd;
+}
+body{
+     background-color: #f5f5f5;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.home{
+    background-image: linear-gradient(to right  ,rgba(0, 0, 0, 0.4),  rgba(0, 0, 0, 0.4))   , url(../images/hero-bg.jpg) ;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+   
+}
+.logo a{
+    font-size: 30px !important;
+    color: white  !important;
+    font-weight: 600;
+}
+.navbar .navbar-nav .nav-link{
+    color: white !important;
+    font-weight: 600 !important;
+}
+.backgroud-img{
+    height: calc(100vh-72px);
+}
+img{
+    width: 100%;
+}
+.content1 {
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+  
+
+}
+.content1 h1{
+    font-size: 4.5rem;
+    font-weight: 600;   
+}
+
+.about-page {
+    /* background-color: #0d6efd; */
+    height: 100vh !important;
+
+}
+.item h1{
+    position:relative;
+    /* background-color: teal; */
+}
+.item h1::after{
+    content: "";
+    width: 100px;
+    height: 4px;
+    background-color: #0d6efd;
+    position: absolute;
+    left: 0;
+    top: 50px;
+
+
+}
+
+.about-image img{
+    border-radius: 4px;
+}
+.skill-mf .progress{
+    background-color: #cde1f8;
+    height: 0.7rem;
+    border-radius: 0;
+}
+.maintitle h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.maintitle::after{
+    content: "";
+    width: 50px;
+   background-color: var(--main-color);
+   height: 4px;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+
+}
+.icon-holder{
+    width: 120px;
+    height: 120px;
+    border: 10px solid var(--main-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-holder{
+    transition: all 0.5s;
+}
+.icon1{
+    font-size: 40px;
+    transition: all 1s;
+  
+}
+.item-s:hover .icon-holder{
+    background-color: #0d6efd;
+    border: 10px solid #cde1f8;
+  
+    
+}
+.item-s:hover .icon1{
+    color: white;
+}
+.work{
+    /* height: 70vh; */
+    background-image: linear-gradient(to right ,rgb(0, 120, 255 ,0.7) ,rgb(0, 120, 255 ,0.7)) , url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.counter-icon{
+    width: 80px;
+    height: 80px;
+    border: 10px solid #cde1f8;
+    border-radius: 50%;
+}
+.counter-number{
+    font-size:32px;
+    margin: 0;
+}
+.counter-num .counter{
+    margin: 0;
+    padding-top: 10px;
+}
+.w-ctegory{
+    color: var(--main-color);
+}
+.w-more{
+    position: relative;
+}
+.w-more i{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 40px;
+    color: var(--main-color);
+
+}
+.por-item:hover img{
+    transform: scale(130%);
+
+}
+.images img{
+    transition: transform 1s;
+    overflow: hidden;
+}
+.feedback{
+    background-image: linear-gradient(to right ,rgb(0, 120, 255 ,0.7) ,rgb(0, 120, 255 ,0.7)) , url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+.carousel-item img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+
+}
+.carousel-indicators button{
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+}
+.card-footer img{
+    width: 30px;
+    height: 30px;
+    /* border-radius: 50%; */
+}
+.card-footer a{
+    text-decoration: none;
+    color: rgb(75, 74, 74);
+}
+.card-left a:hover{
+    color: var(--main-color);
+    
+}
+.blog-img{
+    position: relative;
+}
+.blog-img span{
+    color: white;
+    background-color: #0d6efd;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.last-page{
+    background-image: linear-gradient(to right ,rgb(0, 120, 255 ,0.7) ,rgb(0, 120, 255 ,0.7)) , url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+
+.head h2::after{
+    content: "";
+    width: 120px;
+    height: 4px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+input{
+    border: 1px solid rgb(227, 225, 225);
+
+}
+
+textarea{
+    border: 1px solid rgb(227, 225, 225);
+    resize: vertical;
+}
+textarea:focus{
+    outline:4px solid #afd2fb !important;
+
+
+}
+.form-btn{
+    transition: all 0.5s !important;
+
+}
+input:focus{
+    outline:4px solid #afd2fb !important;
+}
+.form-btn:hover{
+    outline:4px solid #afd2fb !important;
+   
+}
+.contact-list i{
+    color: var(--main-color);
+}
+
+.brand{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid var(--main-color); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;  
+    transition: all 1s; 
+}
+.brand:hover {
+    background-color: #0d6efd;
+    border: 4px solid #cde1f8;
+  
+    
+}
+.brand:hover i{
+    color: white;
+}
+.copyright{
+    background-color: rgb(0, 98, 211);
+    color: white;
+}
+
+
+
+
